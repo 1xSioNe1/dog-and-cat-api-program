@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(128, 186, 151);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+
+.bar {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    color: white;
+    background-color: #343a40!important;
+    border-bottom: 2px solid red;
+}
+
+.nav_bar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bar_logo_img {
+    margin: 8px 0 0 30px;
+}
+
+.login {
+    margin: 8px 30px 0 0;
+}
+
+.main-bar-a {
+    color: white;
+    font: 14px/1 Tahoma;
+    display: block;
+    width: 90px;
+    text-align: center;
+    padding: 12px 0 15px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 11;
+}
+
+.a-tab-li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #524f4e;
+}
+
+
+.anime:hover .main-bar-ul  {
+    display: flex;
+    justify-content: center;
+}
+
+.manga:hover .main-bar-ul  {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-li {
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    width: 160px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    background: transparent;
+    border: none;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 10%);
+    transition: .3s;
+}
+
+.tab-li:hover {
+    box-shadow: 0 8px 10px rgba(255, 255, 255, 0.3);
+    background: white;
+}
+
+.tab-li:hover .a-tab-li {
+    color: black;
+}
+
+.a-ul-anime, .a-ul-manga {
+    color: white;
+}
+
+.main-bar-ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%);
+    z-index: 109;
+    width: 40%;
+    background: #343a40;
+    border-radius: 0 0 10px 10px;
+}
+
+.text_about {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #000000b0;
+}
+
+.text_hs {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.h1_about {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 8px;
+    padding-top: 16px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.dog-img {
+    min-height: 500px;
+    max-height: 500px;
+    border: 2px solid #212529;
+    border-radius: 30px;
+}
+
+.selectDog {
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    border: 2px solid #f0094a;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-5 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(255,27,0);
+  background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+  }
+  .btn-5:hover {
+    color: #f0094a;
+    background: transparent;
+     box-shadow:none;
+  }
+  .btn-5:before,
+  .btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #f0094a;
+    box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px #0003,
+     4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+  }
+  .btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .btn-5:hover:before,
+  .btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+
