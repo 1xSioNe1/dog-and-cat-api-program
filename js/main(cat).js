@@ -6,7 +6,6 @@ const newImgBtn = doc.querySelector('.custom-btn');
 
 
 
-
 newImgBtn.onclick = () => {
     fetch(url)
     .then(response => response.json())
