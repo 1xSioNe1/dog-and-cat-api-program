@@ -1,10 +1,27 @@
 const doc = document;
 const con = console.log;
 const url = 'https://api.thecatapi.com/v1/images/search';
+const catImg = doc.querySelector('.cat-img');
+const newImgBtn = doc.querySelector('.custom-btn');
 
-fetch(url)
+
+
+
+newImgBtn.onclick = () => {
+    fetch(url)
     .then(response => response.json())
     .then(data => {
         let img = data[0].url;
-        con(img)
-    })
+
+        renderImg(img);
+});
+};
+
+function renderImg(img) {
+    catImg.src = img;
+}
+
+console.log(newImgBtn);
+console.dir(newImgBtn);
+
+

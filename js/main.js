@@ -1,7 +1,7 @@
 const doc = document;
 const con = console.log;
 const img = doc.querySelector('img');
-const newImgBtn = doc.querySelector('button');
+const newImgBtn = doc.querySelector('.custom-btn');
 
 const urlRandom = 'https://dog.ceo/api/breeds/image/random';
 const urlAll = 'https://dog.ceo/api/breeds/list/all';
@@ -31,10 +31,9 @@ fetch(urlAll)
         selectDog.onchange = function() {
             thisDog = this.value;
         }
-        newImgBtn.onclick = renderImg;
-    });
+});
 
-
+newImgBtn.onclick = renderImg;
 
 function renderImg() {
     let urlDog = `${urlCustom}${thisDog}/images/random`;
