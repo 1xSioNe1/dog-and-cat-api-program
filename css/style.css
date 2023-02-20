@@ -160,9 +160,6 @@ a {
 }
 
 .selectDog {
-    position: absolute;
-    top: 70%;
-    left: 47%;
     width: 130px;
     height: 40px;
     border-radius: 5px;
@@ -179,10 +176,11 @@ a {
     border: 2px solid black;
 }
 
-.custom-btn {
-    position: absolute;
-    top: 70%;
-    left: 60%;
+.select-conteiner {
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+    gap: 20px;
 }
 
 
